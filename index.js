@@ -18,7 +18,7 @@ const SALT_KEY = process.env.PHONEPE_SALT_KEY;
 const SALT_INDEX = process.env.PHONEPE_SALT_INDEX;
 
 // PhonePe का LIVE API URL
-const PHONEPE_PAY_URL = "https://api.phonepe.com/pg/v1/pay";
+const PHONEPE_PAY_URL = "https://api.phonepe.com/apis/hermes/pg/v1/pay";
 
 // --- API Endpoints ---
 
@@ -185,3 +185,4 @@ app.listen(PORT, () => {
     console.log(`Salt Key: ${SALT_KEY ? 'SET' : 'NOT SET'}`);
 
 });
+
