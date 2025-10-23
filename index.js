@@ -49,7 +49,7 @@ app.post('/initiate-phonepe-payment', async (req, res) => {
             redirectMode: "POST", // 'POST' का उपयोग करें ताकि आप पेमेंट के बाद डेटा को वेरिफाई कर सकें
             
             // यह वह URL है जिस पर PhonePe पेमेंट के बाद सर्वर-से-सर्वर पिंग करेगा
-            callbackUrl: "https://phonepe-1q12.onrender.com/phonepe-callback", // <<< अपना खुद का callback URL यहाँ डालें
+            callbackUrl: "https://phonpe.onrender.com/phonepe-callback", // <<< अपना खुद का callback URL यहाँ डालें
             
             mobileNumber: frontendData.customer_details.customer_phone,
             paymentInstrument: {
@@ -185,4 +185,5 @@ app.listen(PORT, () => {
     console.log(`Salt Key: ${SALT_KEY ? 'SET' : 'NOT SET'}`);
 
 });
+
 
